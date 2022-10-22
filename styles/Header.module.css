@@ -18,21 +18,40 @@
 }
 
 .tab {
-    padding: 1rem;
-    margin-left: 5px;
-    margin-right: 5px;
-    transition: background-color 0.15s ease-in;
+    font-family: Pacifico;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    color: #000000;
 }
-.tab:hover,
-.tab:focus,
-.tab:active {
-    background: linear-gradient(0.25turn, #4babffc9, #fff);
-    border-radius: 10%;
+.tab:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+.tab:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .homelogo {
     font-family: Pacifico;
     font-size: 50px;
+    cursor:pointer;
+    transition: transform 1s;
+}
+
+.homelogo:hover {
+    transform: scale(1.05);
 }
 
 .logoowl {
@@ -40,14 +59,14 @@
     width: 64px;
     margin-left: 10px;
     margin-right: 10px;
-    transition: background-color 0.15s ease;
-    border-radius: 100%;
+    /*transition: background-color 0.15s ease;*/
+    /*border-radius: 100%;*/
 }
 .logoowl:hover,
 .logoowl:focus,
 .logoowl:active {
-    background: linear-gradient(0turn, #fff, #cececed9, #b3680cb9);
-    border-radius: 100%;
+    /*background: linear-gradient(0turn, #fff, #cececed9, #b3680cb9);*/
+    /*border-radius: 100%;*/
 }
 
 @font-face {
