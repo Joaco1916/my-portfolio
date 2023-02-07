@@ -1,0 +1,8 @@
+.flowingHighlight {
+    box-shadow: 0 0 10px #ffffff;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.flowingHighlight:hover {
+    box-shadow: 0 0 10px #000000;
+}

@@ -1,7 +1,10 @@
-import { Box } from "@mui/material"
+import { Box, Grid, Typography } from "@mui/material"
+import { experiences } from "../../utils/tmp_back/experiences"
+import Experience from "../Experiences/Experience"
 import SocialButtons from "../Footer/SocialButtons"
 import RoundedPicture from "../Profile/RoundedPicture"
 import SelfDescription from "../Profile/SelfDescription"
+
 
 const HomeLayout = () => {
     return (
@@ -12,11 +15,25 @@ const HomeLayout = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 width: '100%',
-                height: '100%',
             }}
         >
             <RoundedPicture />
-            <SelfDescription />
+            <Typography sx={{
+                fontWeight: 'bold',
+                fontSize: '24px',
+                textAlign: 'center',
+                p: 2,
+            }}>Joaquín Rodriguez</Typography>
+            <Grid container spacing={2} p={2}>
+                {
+                    experiences.map((experience) => (
+                        <Grid item key={experience.id} xs={12} sm={6}>
+                            <Experience experience={experience}/>
+                        </Grid>
+                    ))
+                }
+            </Grid>
+            {/* <SelfDescription /> */}
             <SocialButtons/>
         </Box>
     )

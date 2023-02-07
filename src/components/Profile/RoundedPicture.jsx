@@ -1,15 +1,25 @@
 import { Box, Typography } from "@mui/material"
+import Image from "next/image"
+import styles from '../../../styles/RoundedPicture.module.css'
 
 const RoundedPicture = () => {
     return (
-        <Box 
+        <Box
+            className={styles.flowingHighlight}
             sx={{
-                width: 250,
-                height: 250,
-                border: '1px solid gray'
+                width: 200,
+                height: 200,
+                borderRadius: '50%',
+                overflow: 'hidden',
             }}
         >
-            <Typography>Picture</Typography>
+            <Image
+                src="/foto_perfil.png"
+                alt="Picture of the author"
+                width={250}
+                height={250}
+                objectFit="none"
+            />
         </Box>
     )
 }
