@@ -4,7 +4,6 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' />
             </Head>
             <body>
                 <Main />
