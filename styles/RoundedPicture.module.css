@@ -1,8 +1,35 @@
 .flowingHighlight {
-    box-shadow: 0 0 10px #ffffff;
+    box-shadow: 0 0 10px #000000;
     transition: box-shadow 0.5s ease-in-out;
 }
 
-.flowingHighlight:hover {
-    box-shadow: 0 0 10px #000000;
+.flowingHighlightRed {
+    box-shadow: 0 0 10px #00ffd5;
+    transition: box-shadow 1s ease-in-out;
 }
+
+.flowingHighlightBlue {
+    box-shadow: 0 0 10px #0000ff;
+    transition: box-shadow 1s ease-in-out;
+}
+
+.flowingHighlightGreen {
+    box-shadow: 0 0 10px #00ff00;
+    transition: box-shadow 1s ease-in-out;
+}
+
+.flowingHighlight:hover {
+    box-shadow: 0 0 10px #80d0c7;
+}
+
+.homelogo {
+    font-family: Pacifico;
+    font-size: 50px;
+    transition: transform 1s;
+}
+
+/*
+.homelogo:hover {
+    transform: scale(1.05);
+}
+*/

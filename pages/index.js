@@ -11,12 +11,7 @@ import styles from '../styles/Landing.module.css'
 
 export default function Home() {
   return (
-    <Box
-      sx={{
-        width: '100vw',
-        height: '100vh'
-      }}
-    >
+    <Box>
       <Head>
         <title>Joaquín Rodriguez</title>
         <meta name="description" content="Portfolio de Joaquín Rodriguez" />
