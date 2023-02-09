@@ -90,7 +90,7 @@ const TopBanner = () => {
                                 height: 50,
                             }}
                         >
-                            <BlindableSwitch checked={blindable} onChange={() => setBlindable(!blindable)}/>
+                            <BlindableSwitch checked={!blindable} onChange={() => setBlindable(!blindable)}/>
                             <Image
                                 src="/svg/noun-glasses-2.svg"
                                 alt="Picture of the author"

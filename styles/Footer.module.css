@@ -19,27 +19,25 @@
 }
 
 .logolinkedin {
-    height: 32px;
-    width: 32px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    padding-top: 4px;
+    padding-left: 4px;
     transition: background-color 0.15s ease;
-    border-radius: 100%;
+    border-radius: 20%;
 }
 .logolinkedin:hover,
 .logolinkedin:focus,
 .logolinkedin:active {
     background-color: #0073b1b4;
-    border-radius: 100%;
+    border-radius: 20%;
 }
 
 .logogithub {
-    height: 32px;
-    width: 32px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    padding-top: 4px;
+    padding-left: 4px;
     transition: background-color 0.15s ease;
     border-radius: 100%;
 }
@@ -51,17 +49,16 @@
 }
 
 .logoinstagram {
-    height: 32px;
-    width: 32px;
-    padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    padding-top: 4px;
+    padding-left: 4px;
     transition: background-color 0.15s ease;
-    border-radius: 100%;
+    border-radius: 20%;
 }
 .logoinstagram:hover,
 .logoinstagram:focus,
 .logoinstagram:active {
     background: linear-gradient(0.15turn, #f58529b6, #dd2a7bb2, #8234af93);
-    border-radius: 100%;
+    border-radius: 20%;
 }
