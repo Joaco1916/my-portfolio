@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
+}
+
 .flowingHighlight {
     box-shadow: 0 0 10px #000000;
     transition: box-shadow 0.5s ease-in-out;
@@ -33,10 +38,3 @@
     transform: scale(1.05);
 }
 */
-
-@font-face {
-    font-family: 'Pacifico';
-    src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
