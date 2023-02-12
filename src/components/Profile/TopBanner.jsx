@@ -64,7 +64,11 @@ const TopBanner = () => {
                                 <RoundedPicture/>
                             </Grid>
                             <Grid item xs={12} sm={6} alignSelf={'center'}>
-                                <Typography className={styles.homelogo} ml={2}>Joaquín Rodriguez</Typography>
+                                <Typography 
+                                    ml={2}
+                                    fontFamily="Pacifico"
+                                    fontSize={50}
+                                >Joaquín Rodriguez</Typography>
                             </Grid>
                         </Grid>
                     </Box>
