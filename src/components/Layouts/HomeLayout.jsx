@@ -1,12 +1,18 @@
 import { Box, Grid, Typography } from "@mui/material"
+import { useState } from "react"
 import { experiences } from "../../utils/tmp_back/experiences"
-import Experience from "../Experiences/Experience"
+import Experiences from "../Experiences/Experiences"
 import SocialButtons from "../Footer/SocialButtons"
-import RoundedPicture from "../Profile/RoundedPicture"
-import SelfDescription from "../Profile/SelfDescription"
 import TopBanner from "../Profile/TopBanner"
 
 const HomeLayout = () => {
+
+    const [ language, setLanguage ] = useState('es');
+
+    const handleLanguageChange = ( newLanguage ) => {
+        setLanguage(newLanguage);
+    }
+
     return (
         <Box
             sx={{
@@ -17,18 +23,16 @@ const HomeLayout = () => {
             }}
         >
                 <Grid container spacing={2} p={2}>
-                    <Grid item xs={12}>
-                        <TopBanner/>
-                    </Grid>
-                    {
-                        experiences.map((experience) => (
-                            <Grid item key={experience.id} xs={12} sm={6}>
-                                <Experience experience={experience}/>
-                            </Grid>
-                        ))
-                    }
+                    <TopBanner 
+                        language={language}
+                        handleLanguageChange={handleLanguageChange}
+                    />
+                    <Experiences 
+                        experiences={experiences}
+                        language={language}
+                        handleLanguageChange={handleLanguageChange}
+                    />
                 </Grid>
-                {/* <SelfDescription /> */}
                 <SocialButtons/>
         </Box>
     )

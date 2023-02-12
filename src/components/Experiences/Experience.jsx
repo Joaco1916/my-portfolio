@@ -83,7 +83,6 @@ const Experience = ({ experience }) => {
                 in={expanded} 
                 timeout="auto" 
                 unmountOnExit
-                //make it collapse smothly
                 sx={{
                     transition: 'height 3.5s ease-in-out',
                     height: expanded ? 'auto' : 0,
