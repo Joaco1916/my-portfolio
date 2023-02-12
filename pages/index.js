@@ -15,20 +15,11 @@ export default function Home() {
       <Head>
         <title>Joaquín Rodriguez</title>
         <meta name="description" content="Portfolio de Joaquín Rodriguez" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon_portfolio.png"/>
       </Head>
-
-      {/*
-        <header>
-          <Header />
-        </header>
-      */}
 
       <HomeLayout />
 
-      {/*
-        <Footer/>
-      */}
     </Box>
   )
 }
