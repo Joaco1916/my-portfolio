@@ -3,6 +3,34 @@
   src: url('/fonts/Pacifico-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Panton";
+  src: url("/fonts/Panton-BlackCaps.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panton";
+  src: url("/fonts/Panton-BlackitalicCaps.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Panton";
+  src: url("/fonts/Panton-LightCaps.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Panton";
+  src: url("/fonts/Panton-LightitalicCaps.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
 html,
 body {
   padding: 0;
