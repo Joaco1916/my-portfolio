@@ -1,11 +1,21 @@
-import { Box, CardContent, Collapse, IconButton, Typography } from '@mui/material';
+//Next
 import Image from 'next/image';
+
+//React
 import { useState } from 'react';
+
+//Styles
 import styles from '../../../styles/Experience.module.css'
+
+//Material UI
+import { Box, Button, CardContent, Collapse, IconButton, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+
+//Material UI Icons
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Location from './Location';
+import Period from './Period';
+import Tools from './Tools';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
@@ -18,7 +28,10 @@ const ExpandMore = styled((props) => {
     }),
 }));
 
-const Experience = ({ experience }) => {
+const Experience = ({ 
+    experience,
+    language,
+}) => {
 
     const { title, company, location, icon, startDate, endDate, description } = experience;
 
@@ -98,20 +111,44 @@ const Experience = ({ experience }) => {
                         width: '100%',
                     }}
                 >
-                    <Typography sx={{ 
-                        display: 'flex',
-                        justifyContent: 'center',
-                        fontSize: '14px',
-                    }}> <LocationOnIcon/>{location}</Typography>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            flexDirection: 'column',
+                            alignItems: 'flex-start',
+                        }}
+                    >
+                        <Location location={location}/>
+                        <Period startDate={startDate} endDate={endDate}/>
+                        <Tools tools={experience.tecnologies} language={language}/>
+                    </Box>
 
-                    <Typography sx={{ 
-                        display: 'flex',
-                        justifyContent: 'center',
-                        fontSize: '14px',
-                        fontStyle: 'italic',
-                    }}> <CalendarMonthIcon/> {startDate} - {endDate}</Typography>
-
-                    <Typography paragraph>{description.es_AR}</Typography>
+                    {/* <Typography paragraph>{description.es_AR}</Typography> */}
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                        }}
+                    >
+                        <Button
+                            sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                color: 'black',
+                                background: 'linear-gradient(180deg, #FFFFFF 70%, #cecece 100%)',
+                                fontWeight: 'bold',
+                                fontSize: '14px',
+                                borderRadius: 8,
+                                border: '1px solid gray',
+                                my: 1,
+                            }}
+                        >
+                            { language === 'es' ? 'Ver más' : 'See more'}
+                        </Button>
+                    </Box>
                 </CardContent>
             </Collapse>
         </Box>
