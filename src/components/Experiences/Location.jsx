@@ -6,10 +6,15 @@ const Location = ({ location }) => {
         <Typography sx={{ 
             display: 'flex',
             justifyContent: 'center',
+            alignItems: 'center',
             fontSize: '14px',
             my: 0.5,
         }}> 
-            <LocationOnIcon/>{location}
+            <LocationOnIcon
+                sx={{
+                    mr: 1,
+                }}
+            />{location}
         </Typography>
     )
 }

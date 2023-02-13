@@ -9,11 +9,16 @@ const Period = ({
         <Typography sx={{ 
             display: 'flex',
             justifyContent: 'center',
+            alignItems: 'center',
             fontSize: '14px',
             fontStyle: 'italic',
             my: 0.5,
         }}>
-            <CalendarMonthIcon/> {startDate} ~ {endDate}
+            <CalendarMonthIcon 
+                sx={{
+                    mr: 1,
+                }}
+            /> {startDate} ~ {endDate}
         </Typography>
     )
 }

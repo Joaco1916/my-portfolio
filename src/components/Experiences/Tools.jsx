@@ -7,27 +7,51 @@ const Tools = ({
     language,
 }) => {
     return(
-        <Box>
-            <Typography>
-                <BuildIcon sx={{ mr: 0.25 }}/>
+        <Box
+            sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+            }}
+        >
+            <Typography
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    fontSize: '14px',
+                    my: 0.5,
+                }}
+            >
+                <BuildIcon sx={{ mr: 1 }}/>
                 {
                     language === 'es' ? 
                     'Herramientas utilizadas:' :
                     'Tools used:'
                 }
             </Typography>
-            {
-                tools.map((tool, index) => {
-                    return(
-                        <Pill 
-                            key={index} 
-                            name={tool.name} 
-                            color={tool.color} 
-                            icon={tool.icon}
-                        />
-                    )
-                })
-            }
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    flexWrap: 'wrap',
+                }}
+            >
+                {
+                    tools.map((tool, index) => {
+                        return(
+                            <Pill 
+                                key={index} 
+                                name={tool.name} 
+                                color={tool.color} 
+                                icon={tool.icon}
+                            />
+                        )
+                    })
+                }
+            </Box>
         </Box>
     )
 }

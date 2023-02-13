@@ -124,7 +124,6 @@ const Experience = ({
                         <Tools tools={experience.tecnologies} language={language}/>
                     </Box>
 
-                    {/* <Typography paragraph>{description.es_AR}</Typography> */}
                     <Box
                         sx={{
                             display: 'flex',
@@ -138,12 +137,15 @@ const Experience = ({
                                 display: 'flex',
                                 justifyContent: 'center',
                                 color: 'black',
-                                background: 'linear-gradient(180deg, #FFFFFF 70%, #cecece 100%)',
-                                fontWeight: 'bold',
+                                fontFamily: 'Panton',
+                                fontWeight: 'normal',
                                 fontSize: '14px',
                                 borderRadius: 8,
-                                border: '1px solid gray',
                                 my: 1,
+                                '&:hover': {
+                                    background: '#FFFFFF',
+                                    transition: 'background 0.5s ease-in-out',
+                                },
                             }}
                         >
                             { language === 'es' ? 'Ver más' : 'See more'}

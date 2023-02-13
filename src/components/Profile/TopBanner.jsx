@@ -66,12 +66,32 @@ const TopBanner = ({
                                 <Grid item xs={12} sm={6}>
                                     <RoundedPicture/>
                                 </Grid>
-                                <Grid item xs={12} sm={6} alignSelf={'center'}>
-                                    <Typography 
-                                        ml={2}
-                                        fontFamily="Pacifico"
+                                <Grid 
+                                    item xs={12} 
+                                    sm={6} 
+                                    alignSelf={'center'}
+                                >
+                                    <Typography
+                                        mt={2}
+                                        fontFamily="Panton"
+                                        fontWeight="bold"
+                                        fontStyle={'normal'}
                                         fontSize={50}
-                                    >Joaquín Rodriguez</Typography>
+                                        lineHeight={1}
+                                    >Joaquín</Typography>
+                                    <Typography
+                                        fontFamily="Panton"
+                                        fontWeight="normal"
+                                        fontStyle={'normal'}
+                                        fontSize={50}
+                                        lineHeight={1}
+                                    >Rodriguez</Typography>
+                                    <Typography
+                                        fontFamily="Panton"
+                                        fontWeight="normal"
+                                        fontStyle={'italic'}
+                                        fontSize={20}
+                                    >Full-stack developer</Typography>
                                 </Grid>
                             </Grid>
                         </Box>
