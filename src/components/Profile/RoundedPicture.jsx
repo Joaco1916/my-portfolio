@@ -32,10 +32,11 @@ const RoundedPicture = () => {
             }}
         >
             <Image
-                src="/foto_perfil_carnet.png"
+                src="/foto_perfil.png"
                 alt="Picture of the author"
                 width={250}
                 height={250}
+                quality={100}
                 objectFit="cover"
             />
         </Box>
