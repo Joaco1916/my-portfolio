@@ -1,9 +1,14 @@
 import { Box, Grid, Typography } from "@mui/material"
 import { useState } from "react"
+import { aboutme } from "../../utils/tmp_back/aboutme"
 import { experiences } from "../../utils/tmp_back/experiences"
+import { studies } from "../../utils/tmp_back/studies"
 import Experiences from "../Experiences/Experiences"
 import SocialButtons from "../Footer/SocialButtons"
+import AboutMe from "../Profile/AboutMe"
+import ContactMe from "../Profile/ContactMe"
 import TopBanner from "../Profile/TopBanner"
+import Studies from "../Studies/Studies"
 
 const HomeLayout = () => {
 
@@ -22,18 +27,31 @@ const HomeLayout = () => {
                 alignItems: 'center',
             }}
         >
-                <Grid container spacing={2} p={2}>
-                    <TopBanner 
-                        language={language}
-                        handleLanguageChange={handleLanguageChange}
-                    />
-                    <Experiences 
-                        experiences={experiences}
-                        language={language}
-                        handleLanguageChange={handleLanguageChange}
-                    />
-                </Grid>
-                <SocialButtons/>
+            <Grid container spacing={2} p={2}>
+                <TopBanner 
+                    language={language}
+                    handleLanguageChange={handleLanguageChange}
+                />
+                <AboutMe
+                    language={language}
+                    aboutMe={aboutme}
+                />
+                <Studies
+                    language={language}
+                    studies={studies}
+                />
+                <Experiences 
+                    experiences={experiences}
+                    language={language}
+                    handleLanguageChange={handleLanguageChange}
+                />
+                <ContactMe
+                    language={language}
+                />
+                <SocialButtons
+                    language={language}
+                />
+            </Grid>
         </Box>
     )
 }

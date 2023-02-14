@@ -4,6 +4,7 @@ import styles from '../../../styles/RoundedPicture.module.css'
 import { useEffect, useState } from "react";
 import { alpha, styled } from '@mui/material/styles';
 import Image from "next/image";
+import { colorPalette } from "../../utils/colorPalette";
 
 const glassStyles = {
     root: {
@@ -13,13 +14,13 @@ const glassStyles = {
 
 const BlindableSwitch = styled(Switch)(({ theme }) => ({
     '& .MuiSwitch-switchBase.Mui-checked': {
-        color: '#13547a',
+        color: colorPalette.stormi.darkest,
         '&:hover': {
-        backgroundColor: alpha('#13547a', theme.palette.action.hoverOpacity),
+            backgroundColor: alpha(colorPalette.stormi.darkest, theme.palette.action.hoverOpacity),
         },
     },
     '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-        backgroundColor: '#13547a',
+        backgroundColor: colorPalette.stormi.darkest,
     },
 }));
 
@@ -50,7 +51,7 @@ const TopBanner = ({
         <Grid item xs={12}>
             <Box
                 sx={{
-                    background: 'linear-gradient(90deg, #13547a 60%, #80d0c7 90%)',
+                    background: `linear-gradient(90deg, ${colorPalette.stormi.darkest} 20%, ${colorPalette.stormi.darker} 40%, ${colorPalette.stormi.normal} 60%, ${colorPalette.stormi.lighter} 80%, ${colorPalette.stormi.lightest} 90%)`,
                     width: '100%',
                     height: '100%',
                     display: 'flex',
@@ -166,6 +167,7 @@ const TopBanner = ({
                                             onClick={() => handleLanguageChange(lang)}
                                             sx={{
                                                 borderRadius: 8,
+                                                background: language === lang ? colorPalette.stormi.lightest : 'white',
                                             }}
                                         >
                                             <Image

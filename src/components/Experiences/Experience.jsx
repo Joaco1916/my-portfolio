@@ -13,8 +13,8 @@ import { styled } from '@mui/material/styles';
 
 //Material UI Icons
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Location from './Location';
-import Period from './Period';
+import Location from '../Basics/Location';
+import Period from '../Basics/Period';
 import Tools from './Tools';
 
 const ExpandMore = styled((props) => {
