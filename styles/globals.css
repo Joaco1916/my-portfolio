@@ -96,3 +96,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(165, 165, 165, 0.4);
+  border-radius: 10px;
+}
