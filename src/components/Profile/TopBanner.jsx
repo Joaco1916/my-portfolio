@@ -31,6 +31,7 @@ const TopBanner = ({
 
     const [ blind, setBlind ] = useState(false);
     const [ blindable, setBlindable ] = useState(true);
+    //const [ alturaBanner, setAlturaBanner ] = useState('96vh')
     const languages = ['es', 'en'];	
 
     useEffect(() => {
@@ -46,6 +47,17 @@ const TopBanner = ({
             return () => clearInterval(intervalNotBlind);
         }
     }, [blind]);
+
+    // useEffect(() => {
+    //     function handleScroll() {
+    //         const scrollPosition = window.scrollY;
+    //         console.log(scrollPosition)
+    //         let newAlturaBanner = 92 - ( (scrollPosition * scrollPosition) / 700);
+    //         setAlturaBanner( newAlturaBanner + 'vh' )
+    //     }
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // }, []);
 
     return (
         <Grid item xs={12}>

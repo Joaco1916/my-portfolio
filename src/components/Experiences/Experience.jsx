@@ -124,6 +124,7 @@ const Experience = ({
                         <Tools tools={experience.tecnologies} language={language}/>
                     </Box>
 
+                    {/*
                     <Box
                         sx={{
                             display: 'flex',
@@ -151,6 +152,7 @@ const Experience = ({
                             { language === 'es' ? 'Ver más' : 'See more'}
                         </Button>
                     </Box>
+                    */}
                 </CardContent>
             </Collapse>
         </Box>
