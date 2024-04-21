@@ -1,4 +1,4 @@
-export const social_media = [
+export const socialMedia = [
     {
         src:"/svg/github.svg",
         alt:"Github Logo",

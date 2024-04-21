@@ -4,7 +4,7 @@ import styles from '../../../styles/RoundedPicture.module.css'
 import { useEffect, useState } from "react";
 import { alpha, styled } from '@mui/material/styles';
 import Image from "next/image";
-import { colorPalette } from "../../utils/colorPalette";
+import { colorPalette } from "../../utils/color-palette";
 
 const glassStyles = {
     root: {

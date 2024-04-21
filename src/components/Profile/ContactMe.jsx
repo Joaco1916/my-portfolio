@@ -1,6 +1,6 @@
 import { Box, Grid, Link, Typography } from "@mui/material"
 import { Fragment } from "react"
-import { colorPalette } from "../../utils/colorPalette"
+import { colorPalette } from "../../utils/color-palette"
 import PhoneIcon from '@mui/icons-material/Phone';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import Image from "next/image";

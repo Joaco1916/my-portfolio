@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material"
 import { Fragment } from "react"
-import { colorPalette } from "../../utils/colorPalette"
+import { colorPalette } from "../../utils/color-palette"
 
 const AboutMe = ({ 
     language,

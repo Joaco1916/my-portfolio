@@ -1,8 +1,8 @@
 import { Box, Grid, Typography } from "@mui/material"
 import { useEffect, useState } from "react"
-import { aboutme } from "../../utils/tmp_back/aboutme"
-import { experiences } from "../../utils/tmp_back/experiences"
-import { studies } from "../../utils/tmp_back/studies"
+import { aboutMe } from "../../utils/tmp-back/about-me"
+import { experiences } from "../../utils/tmp-back/experiences"
+import { studies } from "../../utils/tmp-back/studies"
 import Experiences from "../Experiences/Experiences"
 import SocialButtons from "../Footer/SocialButtons"
 import AboutMe from "../Profile/AboutMe"
@@ -46,7 +46,7 @@ const HomeLayout = () => {
                 />
                 <AboutMe
                     language={language}
-                    aboutMe={aboutme}
+                    aboutMe={aboutMe}
                 />
                 <Studies
                     language={language}

@@ -1,4 +1,4 @@
-export const aboutme = {
+export const aboutMe = {
     es:{
         title: 'Sobre mí',
         descriptions: [

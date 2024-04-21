@@ -1,8 +1,8 @@
-import { social_media } from "../../utils/social_media"
+import { socialMedia } from "../../utils/social-media"
 import styles from '../../../styles/Footer.module.css'
 import Image from 'next/image'
 import { Box, Grid, Link, Stack, Typography } from "@mui/material"
-import { colorPalette } from "../../utils/colorPalette"
+import { colorPalette } from "../../utils/color-palette"
 
 const SocialButtons = ({
     language
@@ -39,26 +39,26 @@ const SocialButtons = ({
                 >
                     <Box className={styles.logogithub}>
                         <Link
-                            href={social_media[0].url}
+                            href={socialMedia[0].url}
                             target={"_blank"} rel="noreferrer"
                         >
-                            <Image src={social_media[0].src} alt={social_media[0].alt} width={32} height={32}/>
+                            <Image src={socialMedia[0].src} alt={socialMedia[0].alt} width={32} height={32}/>
                         </Link>
                     </Box>
                     <Box className={styles.logolinkedin}>
                         <Link
-                            href={social_media[1].url}
+                            href={socialMedia[1].url}
                             target="_blank" rel="noreferrer"
                         >
-                            <Image src={social_media[1].src} alt={social_media[1].alt} width={32} height={32}/>
+                            <Image src={socialMedia[1].src} alt={socialMedia[1].alt} width={32} height={32}/>
                         </Link>
                     </Box>
                     <Box className={styles.logoinstagram}>
                         <Link
-                            href={social_media[2].url}
+                            href={socialMedia[2].url}
                             target={"_blank"} rel="noreferrer"
                         >
-                            <Image src={social_media[2].src} alt={social_media[2].alt} width={32} height={32}/>
+                            <Image src={socialMedia[2].src} alt={socialMedia[2].alt} width={32} height={32}/>
                         </Link>
                     </Box>
                 </Stack>
