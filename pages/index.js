@@ -1,13 +1,9 @@
-//Nextjs
-import { Box } from '@mui/material'
-import Head from 'next/head'
-import Image from 'next/image'
+// External
+import { Box } from '@mui/material';
+import Head from 'next/head';
 
-//Custom
-import Footer from '../src/components/Footer/Footer'
-import Header from '../src/components/Header/Header'
-import HomeLayout from '../src/components/Layouts/HomeLayout'
-import styles from '../styles/Landing.module.css'
+// Internal
+import HomeLayout from '@/layouts/HomeLayout';
 
 export default function Home() {
   return (
@@ -15,11 +11,9 @@ export default function Home() {
       <Head>
         <title>Joaquín Rodriguez</title>
         <meta name="description" content="Portfolio de Joaquín Rodriguez" />
-        <link rel="icon" href="/icon_portfolio.png"/>
+        <link rel="icon" href="/icon_portfolio.png" />
       </Head>
-
       <HomeLayout />
-
     </Box>
-  )
+  );
 }
