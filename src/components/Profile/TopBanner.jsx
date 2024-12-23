@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { alpha, styled } from '@mui/material/styles';
 import Image from "next/image";
 import { colorPalette } from "../../utils/color-palette";
+import FrostedGlass from "../Basics/FrostedGlass";
 
 const glassStyles = {
     root: {
@@ -31,7 +32,6 @@ const TopBanner = ({
 
     const [ blind, setBlind ] = useState(false);
     const [ blindable, setBlindable ] = useState(true);
-    //const [ alturaBanner, setAlturaBanner ] = useState('96vh')
     const languages = ['es', 'en'];	
 
     useEffect(() => {
@@ -48,23 +48,13 @@ const TopBanner = ({
         }
     }, [blind]);
 
-    // useEffect(() => {
-    //     function handleScroll() {
-    //         const scrollPosition = window.scrollY;
-    //         console.log(scrollPosition)
-    //         let newAlturaBanner = 92 - ( (scrollPosition * scrollPosition) / 700);
-    //         setAlturaBanner( newAlturaBanner + 'vh' )
-    //     }
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, []);
-
     return (
         <Grid item xs={12}>
             <Box
                 sx={{
                     background: `linear-gradient(90deg, ${colorPalette.stormi.darkest} 20%, ${colorPalette.stormi.darker} 40%, ${colorPalette.stormi.normal} 60%, ${colorPalette.stormi.lighter} 80%, ${colorPalette.stormi.lightest} 90%)`,
-                    width: '100%',
+                    // add background image from public folder
+                    backgroundImage: 'url(/dark-background-7680x4320-8324.png)',
                     height: '100%',
                     display: 'flex',
                     padding: 4,
@@ -72,12 +62,13 @@ const TopBanner = ({
                     justifyContent: 'space-between'
                 }}
             >
+              <FrostedGlass>
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
                         <Box style={ (blind && blindable) ? glassStyles.root : null }>
                             <Grid container>
                                 <Grid item xs={12} sm={6}>
-                                    <RoundedPicture/>
+                                  <RoundedPicture/>
                                 </Grid>
                                 <Grid 
                                     item xs={12} 
@@ -196,6 +187,7 @@ const TopBanner = ({
                         </Box>
                     </Grid>
                 </Grid>
+              </FrostedGlass>
             </Box>
         </Grid>
     )

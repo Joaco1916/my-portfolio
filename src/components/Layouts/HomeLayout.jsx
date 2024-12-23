@@ -13,21 +13,9 @@ import Studies from "../Studies/Studies"
 const HomeLayout = () => {
 
     const [ language, setLanguage ] = useState('es');
-    //const [ opacity, setOpacity ] = useState(1);
-
     const handleLanguageChange = ( newLanguage ) => {
         setLanguage(newLanguage);
     }
-
-    // useEffect(() => {
-    //     function handleScroll() {
-    //         const scrollPosition = window.scrollY;
-    //         const newOpacity = 1 - (scrollPosition / 500); // 500 es la posición en píxeles donde queremos que el elemento se haya desvanecido completamente
-    //         setOpacity(newOpacity);
-    //     }
-    //     window.addEventListener('scroll', handleScroll);
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, []);
 
     return (
         <Box
@@ -36,7 +24,6 @@ const HomeLayout = () => {
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
-                //opacity: opacity,
             }}
         >
             <Grid container spacing={2} p={2}>

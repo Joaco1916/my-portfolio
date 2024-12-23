@@ -97,6 +97,15 @@ a {
   box-sizing: border-box;
 }
 
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  width: 100%;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
