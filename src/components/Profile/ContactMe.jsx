@@ -94,7 +94,7 @@ const ContactMe = ({
                                 objectFit="cover"
                             />
                             <Link
-                                href={'/docs/CV-Joaquín-Rodriguez-English-version.pdf'}
+                                href={'/docs/CV-Joaquin-Rodriguez-english.pdf'}
                                 download
                                 color={'inherit'}
                                 underline={'none'}
