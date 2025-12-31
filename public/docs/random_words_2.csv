@@ -1,0 +1,51 @@
+#,Familia y Vínculos,Empleos y Oficios,Comidas y Postres,Herramientas,Objetos de Casa,Animales,Frutas y Vegetales,Vehículos,Deportes,Tecnología y Electrod.
+1,Padre,Médico,Pizza,Martillo,Silla,León,Manzana,Auto,Fútbol,Celular
+2,Madre,Maestro,Pasta,Destornillador,Mesa,Tigre,Banana,Camión,Tenis,Laptop/notebook
+3,Hijo,Juez,Hamburguesa,Pinza,Cama,Oso,Tomate,Bici,Rugby,Tablet
+4,Hija,Piloto,Sushi,Llave,Sofá,Delfín,Zanahoria,Moto,Golf,Reloj
+5,Hermano,Chef,Taco,Sierra,Lámpara,Águila,Uva,Avión,Boxeo,Cámara
+6,Hermana,Policía,Ensalada,Clavo,Espejo,Mono,Piña,Barco,Judo,Router
+7,Abuelo,Bombero,Sopa,Tornillo,Alfombra,Cebra,Fresa,Tren,Surf,Mouse
+8,Abuela,Pintor,Arroz,Taladro,Cortina,Lobo,Limón,Metro,Remo,Teclado
+9,Nieto,Músico,Carne,Nivel,Cuadro,Gato,Papa,Taxi,Vela,Monitor
+10,Nieta,Actor,Pollo,Lima,Reloj,Perro,Cebolla,Grúa,Polo,Dron
+11,Tío,Abogado,Helado,Metro,Plato,Jirafa,Sandía,Autobús,Natación,TV
+12,Tía,Ingeniero,Tarta,Formón,Vaso,Vaca,Naranja,Tranvía,Ciclismo,Altavoz
+13,Primo,Arquitecto,Galleta,Gato,Tenedor,Caballo,Pera,Yate,Karate,Consola
+14,Prima,Dentista,Chocolate,Mazo,Cuchillo,Cerdo,Durazno,Cohete,Hockey,Microondas
+15,Sobrino,Enfermero,Flan,Serrucho,Cuchara,Oveja,Mango,Tractor,Esquí,Horno
+16,Sobrina,Granjero,Pudín,Escuadra,Sartén,Gallina,Kiwi,Patín,Pádel,Batidora
+17,Suegro,Albañil,Dona,Pincel,Olla,Pato,Melón,Canoa,Yoga,Licuadora
+18,Suegra,Sastre,Churro,Espátula,Jarra,Conejo,Ciruela,Furgón,Pesca,Cafetera
+19,Yerno,Cartero,Pastel,Lija,Taza,Zorro,Cereza,Jeep,Billar,Plancha
+20,Nuera,Chofer,Gelatina,Grapadora,Mantel,Búho,Higo,Ferry,Ajedrez,Secador
+21,Padrino,Mecánico,Lasaña,Alicate,Almohada,Tiburón,Brócoli,Ambulancia,Béisbol,Lavadora
+22,Madrina,Electricista,Empanada,Cincel,Sábana,Ballena,Lechuga,Patrulla,Voleibol,Heladera
+23,Ahijado,Plomero,Paella,Broca,Manta,Pulpo,Pepino,Blindado,Atletismo,Aspiradora
+24,Ahijada,Carpintero,Asado,Tornillo de banco,Toalla,Tortuga,Ajo,Caravana,Gimnasia,Ventilador
+25,Cuñado,Soldador,Ceviche,Soldador,Jabón,Cangrejo,Pimiento,Scooter,Escalada,Tostadora
+26,Cuñada,Barbero,Risotto,Calibre,Peine,Medusa,Espinaca,Triciclo,Buceo,Estufa
+27,Esposo,Minero,Ravioles,Hacha,Cepillo,Foca,Apio,Góndola,Esgrima,Módem
+28,Esposa,Marinero,Puré,Pico,Esponja,Pingüino,Calabaza,Quad,Críquet,Impresora
+29,Novio,Soldado,Guiso,Pala,Percha,Raya,Nabo,Velero,Squash,Webcam
+30,Novia,Panadero,Tortilla,Rastrillo,Maleta,Calamar,Rábano,Trineo,Dardos,Server
+31,Bisabuelo,Fotógrafo,Brownie,Carretilla,Llave,Elefante,Berenjena,Limusina,Waterpolo,Satélite
+32,Bisabuela,Periodista,Muffin,Polea,Candado,Rinoceronte,Coliflor,Excavadora,Lacrosse,Proyector
+33,Tatarabuelo,Científico,Alfajor,Soplete,Cubo,Hipopótamo,Alcachofa,Tanque,Handball,Escáner
+34,Tataranieto,Astronauta,Tiramisú,Yunque,Escoba,Camello,Espárrago,Hidroavión,Softbol,Disco duro
+35,Hermanastro,Arqueólogo,Cheesecake,Cizalla,Trapeador,Gorila,Remolacha,Portaaviones,Triatlón,USB
+36,Hijastro,Veterinario,Panqueque,Compás,Basurero,Canguro,Puerro,Segway,Parkour,Auriculares
+37,Padrastro,Psicólogo,Waffle,Punzón,Periódico,Koala,Batata,Kayak,Motocross,Batidora
+38,Madrastra,Cajero,Crepe,Escofina,Libro,Alce,Champiñón,Drone,Slalom,Lavavajillas
+39,Suegros,Mozo,Turrón,Tenaza,Florero,Panda,Maíz,Monopatín,Windsurf,Freezer
+40,Consuegros,Joyero,Merengue,Serrucho,Vela,Lémur,Arveja,Tanque,Bádminton,Purificador
+41,Amigo,Programador,Canelones,Cinta métrica,Alhajero,Serpiente,Arándano,Teleférico,Sumo,Sandwichera
+42,Compañero,Diseñador,Ñoquis,Aceitera,Paragüero,Rana,Frambuesa,Carroza,Kickboxing,Freidora
+43,Vecino,Escritor,Brocheta,Gato hidráulico,Perchero,Lagarto,Papaya,Remolque,CrossFit,Calefactor
+44,Conocido,Traductor,Falafel,Multímetro,Costurero,Escorpión,Granada,Hormigonera,Patinaje,Afeitadora
+45,Prometido,Contador,Hummus,Segueta,Abanico,Hormiga,Mandarina,Quitanieves,Senderismo,Depiladora
+46,Tutor,Secretario,Sándwich,Prensa,Cenicero,Abeja,Lima,Calesa,Tiro con arco,Termo
+47,Huérfano,Conserje,Hot dog,Formón,Linterna,Mosca,Coco,Avioneta,Paintball,Balanza
+48,Pariente,Jardinero,Nuggets,Escariador,Tijera,Mosquito,Nuez,Buggy,Curling,GPS
+49,Bebé,Herrero,Burrito,Imán,Aguja,Araña,Almendra,Dirigible,Nascar,Videoportero
+50,Infante,Pescador,Quesadilla,Yunque,Hilo,Grillo,Avellana,Balsa,Skeleton,Switch
